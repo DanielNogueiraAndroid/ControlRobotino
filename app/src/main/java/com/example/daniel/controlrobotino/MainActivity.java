@@ -58,6 +58,8 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
+
+
         a.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -78,9 +80,30 @@ public class MainActivity extends AppCompatActivity {
                 send("d");
             }
         });
+        w.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                send("w");
+
+            }
+        });
+        q.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                send("q");
+            }
+        });
+        e.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                send("e");
+            }
+        });
     }
 
     private void disConnect() {
+
 
 
     }
@@ -128,7 +151,7 @@ public class MainActivity extends AppCompatActivity {
                 portString = portEditText.getText().toString();
                 portInt = Integer.parseInt(portString);
                 socket = new Socket(serverAddr, portInt);
-                
+
                 // connected = true;
 
      /*           DataOutputStream out = new DataOutputStream(socket.getOutputStream());
