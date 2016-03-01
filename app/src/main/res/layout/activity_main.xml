@@ -112,4 +112,14 @@
         android:layout_alignTop="@+id/connect"
         android:layout_alignLeft="@+id/button7"
         android:layout_alignStart="@+id/button7" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Base"
+        android:id="@+id/base"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/d"
+        android:layout_toEndOf="@+id/d" />
 </RelativeLayout>

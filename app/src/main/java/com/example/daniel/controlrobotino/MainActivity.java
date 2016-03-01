@@ -12,7 +12,7 @@ import java.net.InetAddress;
 import java.net.Socket;
 
 public class MainActivity extends AppCompatActivity {
-    Button a,s,d,q,w,e,connect,disconnect;
+    Button a,s,d,q,w,e,connect,disconnect,base;
     EditText portEditText;
     Socket socket;
     String portString;
@@ -32,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
         e = (Button) findViewById(R.id.e);
         connect = (Button) findViewById(R.id.connect);
         disconnect = (Button) findViewById(R.id.off);
+        base = (Button) findViewById(R.id.base);
         portEditText = (EditText) findViewById(R.id.port);
 
 
@@ -50,15 +51,12 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-        connect.setOnClickListener(new View.OnClickListener() {
+        base.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                connect();
+                send("x");
             }
         });
-
-
-
 
         a.setOnClickListener(new View.OnClickListener() {
             @Override
